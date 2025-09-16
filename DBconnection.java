@@ -18,7 +18,7 @@ public static Connection getConnection() {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			String connectionString = PropertyUtil.getPropertyString();
 			connection = DriverManager.getConnection(connectionString);
-			//connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/career_hub","root","Palash!123@");
+			//connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/career_hub","root","xxxx");
 		}
 		 catch (ClassNotFoundException | SQLException e) {
              e.printStackTrace();
@@ -28,4 +28,5 @@ public static Connection getConnection() {
 	return connection;
 }
 }
+
 
